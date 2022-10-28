@@ -1,0 +1,220 @@
+:root{
+    --white: #E7E9EA;
+    --black: #000000;
+    --blue: #1D9BF0; 
+    --gray: #71767B;
+}
+
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--black);
+    color: var(--white);
+    font-size: 1.4rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+}
+
+a{
+    text-decoration: none;
+}
+
+main{
+    display: flex;
+    height: 100%;
+}
+
+.left{
+    width: 100%;
+    background-image: url('./background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 45vw;
+}
+
+.twitter{
+    width: 47%;
+}
+
+.right{
+    min-width: 45vw;
+    padding: 3.6rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.heading{
+    margin-block: 6rem;
+}
+
+h1{
+    font-size: 6.4rem;
+    font-weight: 900;
+}
+
+.join{
+    margin-top: -1rem;
+}
+
+h2{
+    font-size: 3rem;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3.5rem;
+    letter-spacing: -0.25px;
+}
+
+.btn{
+    width: 30rem;
+    height: 4rem;
+    background-color: white;
+    border-radius: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    letter-spacing: -0.25px;
+    transition: background-color 0.5s;
+}
+
+.logo{
+    margin-right: 0.75rem;
+}
+
+.google:hover,.apple:hover{
+    background-color: rgba(255,255,255,0.9);
+}
+
+.apple{
+    margin-top: 1.5rem;
+}
+
+.inner-text{
+    color: #3c4043;
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-bottom: 0.25rem;
+}
+
+.google .inner-text{
+    font-weight: 500;
+}
+
+.horizontal{
+    display: flex;
+    width: 300px;
+    align-items: center;
+    font-size: 1.3rem;
+    margin-block: 1rem;
+}
+
+.line{
+    height: 1px;
+    background-color: #2F3336;
+    width: 150px;
+}
+
+.sign-up{
+    background-color: var(--blue);
+    color: white;
+}
+
+.sign-up:hover{
+    background-color: rgba(29, 155, 240,0.9);
+}
+
+.overflow{
+    font-size: 1.3rem;
+    font-weight: 700;
+    width: 270px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.terms{
+    color: var(--gray);
+    font-size: 1rem;
+    width: 300px;
+    margin-top: 1rem;
+}
+
+.terms > a{
+    color: var(--blue);
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.already{
+    margin-top: 6.5rem;
+}
+
+h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.sign-in{
+    margin-top: 2rem;
+    background-color: transparent;
+    border: 1px solid rgb(83, 100, 113);
+}
+
+.sign-in > div{
+    color: var(--blue);
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.sign-in:hover{
+    background-color: rgb(22, 30, 46);
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1.4rem;
+}
+footer a,.copy{
+    color: var(--gray);
+    font-size: 1.2rem;
+    margin-block: 0.4rem;
+    padding-right: 1.6rem;
+}
+
+@media (max-width: 60em){
+    h1{
+        font-size: 4rem;
+    }
+    h2{
+        font-size: 2.25rem;
+    }
+    main{
+        flex-direction: column-reverse;
+    }
+    .left{
+        min-height: 95vw;
+    }
+    .twitter{
+        width: 80%;
+    }
+}
